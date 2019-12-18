@@ -10,12 +10,12 @@ import java.util.Scanner;
 
 public class Main {
 	
-	public static String cvsFile = "C:\\Users\\I\\Desktop\\JAVA_uzduotis\\sample.csv";
+	public static String csvFile = "C:\\Users\\I\\Desktop\\JAVA_uzduotis\\sample.csv";
 	public static ArrayList<String> aList = new ArrayList<String>();
 	
 	public static void main(String[] args) throws IOException {
 		
-		readAllLinesFromFile(cvsFile);	    
+		readAllLinesFromFile(csvFile);	    
 	    ArrayList<Goods> goods = sumUpDublicates(convertToGoods(aList));	    	    
 	    
 	    ArrayList<Goods> filteredByQuantity = filterByQuantity(goods);
